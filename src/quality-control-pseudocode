@@ -1,3 +1,6 @@
+For the quality control module, we will implement a 2nd pass HIT, and then use majority vote to decide 
+which paragraph was most highly rated. Below is the code to identify the most highly rated paragraph.
+
 For each worker "wid" {
   int max = 0;
   int paragraph = 0;
