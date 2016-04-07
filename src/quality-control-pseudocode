@@ -1,0 +1,14 @@
+For each worker "wid" {
+  int max = 0;
+  int paragraph = 0;
+  for each unique input paragraph "pid" {
+    rating = worker_relevance + worker_interesting + worker_humorous + worker_appropriate + worker_thoughtfulness
+    if (rating > max) {
+      max = rating;
+      paragraph = pid
+    }
+  }
+  make a new table "finaltable" with entry (wid, paragraph);  //(wid, paragraph) represents the paragraph that the worker liked the most
+}
+
+In the table "finaltable", pick the paragraph according to majority vote across all workers.
