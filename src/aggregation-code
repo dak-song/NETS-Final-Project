@@ -1,0 +1,5 @@
+Our HTML file for our HIIT
+
+<div class="html-element-wrapper"></div>
+<cml:textarea label="Add 1-3 sentences to add to the story. " validates="required rangeLength:{min:50,max:200}"  gold="true" />
+
